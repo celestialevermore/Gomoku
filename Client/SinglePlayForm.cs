@@ -30,7 +30,7 @@ namespace Client
         public SinglePlayForm()
         {
             InitializeComponent();
-            this.PlayButton.Enabled = false;
+            this.PlayButton.Enabled = true;
         }
         
         //승리 판정 함수
@@ -102,6 +102,7 @@ namespace Client
                 MessageBox.Show("게임을 실행해주세요.");
                 return;
             }
+           // this.PlayButton.Enabled = false;
 
             Graphics g = this.pictureBox1.CreateGraphics(); //그림을 그리기 위해 만듬
             int x = e.X / rectSize;

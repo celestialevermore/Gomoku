@@ -161,7 +161,8 @@ namespace Client
             {
                 for(int y = 3; y <= 15; y += 6)
                 {
-                    gp.FillEllipse(brush_for_flower, x*rectSize+11, y*rectSize+11, flowerSize, flowerSize);
+                    gp.FillEllipse(brush_for_flower, x*rectSize+11,y*rectSize+11 , flowerSize, flowerSize);
+                    
                 }
             }
         }
